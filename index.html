@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurv's</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logoo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home </a></li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="apurvcv.pdf">My Cv</a> </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="headertext">
+
+                    <p>Web Developer/Java Developer/Student</p>
+                    <h1>Hi, I'm <span>  Apurv Bhargav </span><br> from INDIA</h1>
+                </div>
+                <img class="img2" src="back22.png" alt="">
+            </div>
+        </div>
+
+        
+
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="back2.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub">About me</h1>
+                        <p>As you know my name is Apurv . I’m from Muzaffarnagar U.P, where I finished my graduation in 2020 from CCS university Meerut , and I am currently pursuing Master Of computer Application from NIT Kurukshetra. I like watching movies, at least once a month. I play cricket on weekends and badminton whenever I get time.
+                            I’m particularly strong in Java programming and DSA. If anyone requires support in these areas, I’ll be glad to help . I currently work on a Machine learning  college project.
+                            </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                             
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java</span> </li>
+                                <li><span>C/C++</span> </li>
+                                <li><span>Data Structure and algorithms</span> </li>
+                                <li><span>Python</span> </li>
+                                <li><span>MySQL</span> </li>
+                                <li><span>Operating Systems</span> </li>
+                                <li><span>DBMS</span> </li>
+                                <li><span>Image Processing</span> </li>
+                                <li><span>Web development</span> <br>Web application developer</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                 
+                                <li><span>Master Of Computer Application</span> <br> 8.8 CGPA NIT Kurukshetra-2024</li>
+                                <li><span>NIMCET-2021</span> <br>All India Rank -328</li>
+
+                                <li><span>B.SC (Physics,Math.Computer Application)</span> <br> 72.0% DAV college-2020</li>
+                                <li><span>10+2</span> <br> 70.5% DAV college-2017</li>
+                                <li><span>High School</span> <br> 74.5% K.j.p.s.d high school-2015</li>
+                                 
+                            </ul>
+                        </div>
+
+
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+         <div id="contact">
+             <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>apurv.99.ab@gmail.com</p>
+                        <p>8384831774</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/apurv.bhargava.9" class="fa fa-facebook"></a>
+                            <a href="https://www.linkedin.com/in/apurv-bhargav-a365b3221/" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/aapurvbhargav/" class="fa fa-instagram"></a>
+                             
+                             
+                        </div>
+                        <a href="apurvcv.pdf" download class=" btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your gmail" required>
+                            <textarea name="Message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+             </div>
+
+             <div class="copyright">
+                <p>Copyright © Apurv Bhargav 2023-2026</p>
+             </div>
+         </div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body> 
+</html>
